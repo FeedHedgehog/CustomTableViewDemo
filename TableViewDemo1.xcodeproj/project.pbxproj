@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		AF8937691BE2718E0031B5A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8937681BE2718E0031B5A1 /* main.m */; };
 		AF89376C1BE2718E0031B5A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF89376B1BE2718E0031B5A1 /* AppDelegate.m */; };
-		AF89376F1BE2718E0031B5A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF89376E1BE2718E0031B5A1 /* ViewController.m */; };
 		AF8937721BE2718E0031B5A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8937701BE2718E0031B5A1 /* Main.storyboard */; };
 		AF8937741BE2718E0031B5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8937731BE2718E0031B5A1 /* Assets.xcassets */; };
 		AF8937771BE2718E0031B5A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8937751BE2718E0031B5A1 /* LaunchScreen.storyboard */; };
+		AF8937821BE276770031B5A1 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8937811BE276770031B5A1 /* HomeTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		AF8937851BE2F4E50031B5A1 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8937841BE2F4E50031B5A1 /* DetailTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		AF8937881BE2F50C0031B5A1 /* LuLuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8937871BE2F50C0031B5A1 /* LuLuTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		AFE425271BE51AED0003EA33 /* guangtouq.png in Resources */ = {isa = PBXBuildFile; fileRef = AFE425261BE51AED0003EA33 /* guangtouq.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +23,17 @@
 		AF8937681BE2718E0031B5A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF89376A1BE2718E0031B5A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF89376B1BE2718E0031B5A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AF89376D1BE2718E0031B5A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AF89376E1BE2718E0031B5A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AF8937711BE2718E0031B5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF8937731BE2718E0031B5A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF8937761BE2718E0031B5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF8937781BE2718E0031B5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF8937801BE276770031B5A1 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		AF8937811BE276770031B5A1 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		AF8937831BE2F4E50031B5A1 /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
+		AF8937841BE2F4E50031B5A1 /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
+		AF8937861BE2F50C0031B5A1 /* LuLuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuLuTableViewCell.h; sourceTree = "<group>"; };
+		AF8937871BE2F50C0031B5A1 /* LuLuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuLuTableViewCell.m; sourceTree = "<group>"; };
+		AFE425261BE51AED0003EA33 /* guangtouq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guangtouq.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,11 @@
 		AF8937661BE2718E0031B5A1 /* TableViewDemo1 */ = {
 			isa = PBXGroup;
 			children = (
+				AFE425231BE51A280003EA33 /* Assets */,
+				AF89377F1BE2763E0031B5A1 /* View */,
+				AF89377E1BE276230031B5A1 /* ViewController */,
 				AF89376A1BE2718E0031B5A1 /* AppDelegate.h */,
 				AF89376B1BE2718E0031B5A1 /* AppDelegate.m */,
-				AF89376D1BE2718E0031B5A1 /* ViewController.h */,
-				AF89376E1BE2718E0031B5A1 /* ViewController.m */,
-				AF8937701BE2718E0031B5A1 /* Main.storyboard */,
 				AF8937731BE2718E0031B5A1 /* Assets.xcassets */,
 				AF8937751BE2718E0031B5A1 /* LaunchScreen.storyboard */,
 				AF8937781BE2718E0031B5A1 /* Info.plist */,
@@ -77,6 +85,51 @@
 				AF8937681BE2718E0031B5A1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF89377E1BE276230031B5A1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF8937801BE276770031B5A1 /* HomeTableViewController.h */,
+				AF8937811BE276770031B5A1 /* HomeTableViewController.m */,
+				AF8937831BE2F4E50031B5A1 /* DetailTableViewController.h */,
+				AF8937841BE2F4E50031B5A1 /* DetailTableViewController.m */,
+				AF8937861BE2F50C0031B5A1 /* LuLuTableViewCell.h */,
+				AF8937871BE2F50C0031B5A1 /* LuLuTableViewCell.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AF89377F1BE2763E0031B5A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF8937701BE2718E0031B5A1 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AFE425231BE51A280003EA33 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AFE425241BE51A350003EA33 /* Resouces */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		AFE425241BE51A350003EA33 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				AFE425251BE51A3F0003EA33 /* Images */,
+			);
+			name = Resouces;
+			sourceTree = "<group>";
+		};
+		AFE425251BE51A3F0003EA33 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AFE425261BE51AED0003EA33 /* guangtouq.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF8937771BE2718E0031B5A1 /* LaunchScreen.storyboard in Resources */,
+				AFE425271BE51AED0003EA33 /* guangtouq.png in Resources */,
 				AF8937741BE2718E0031B5A1 /* Assets.xcassets in Resources */,
 				AF8937721BE2718E0031B5A1 /* Main.storyboard in Resources */,
 			);
@@ -149,8 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF89376F1BE2718E0031B5A1 /* ViewController.m in Sources */,
+				AF8937881BE2F50C0031B5A1 /* LuLuTableViewCell.m in Sources */,
+				AF8937851BE2F4E50031B5A1 /* DetailTableViewController.m in Sources */,
 				AF89376C1BE2718E0031B5A1 /* AppDelegate.m in Sources */,
+				AF8937821BE276770031B5A1 /* HomeTableViewController.m in Sources */,
 				AF8937691BE2718E0031B5A1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +356,7 @@
 				AF89377D1BE2718E0031B5A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
