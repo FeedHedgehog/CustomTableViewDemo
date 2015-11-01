@@ -15,6 +15,8 @@
 		AF8937821BE276770031B5A1 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8937811BE276770031B5A1 /* HomeTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		AF8937851BE2F4E50031B5A1 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8937841BE2F4E50031B5A1 /* DetailTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		AF8937881BE2F50C0031B5A1 /* LuLuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8937871BE2F50C0031B5A1 /* LuLuTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		AFE28B9A1BE6451B0098CB79 /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFE28B991BE6451B0098CB79 /* splash.jpg */; settings = {ASSET_TAGS = (); }; };
+		AFE28B9D1BE6478A0098CB79 /* UserGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE28B9C1BE6478A0098CB79 /* UserGuideViewController.m */; settings = {ASSET_TAGS = (); }; };
 		AFE425271BE51AED0003EA33 /* guangtouq.png in Resources */ = {isa = PBXBuildFile; fileRef = AFE425261BE51AED0003EA33 /* guangtouq.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,9 @@
 		AF8937841BE2F4E50031B5A1 /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
 		AF8937861BE2F50C0031B5A1 /* LuLuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuLuTableViewCell.h; sourceTree = "<group>"; };
 		AF8937871BE2F50C0031B5A1 /* LuLuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuLuTableViewCell.m; sourceTree = "<group>"; };
+		AFE28B991BE6451B0098CB79 /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash.jpg; sourceTree = "<group>"; };
+		AFE28B9B1BE6478A0098CB79 /* UserGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserGuideViewController.h; sourceTree = "<group>"; };
+		AFE28B9C1BE6478A0098CB79 /* UserGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGuideViewController.m; sourceTree = "<group>"; };
 		AFE425261BE51AED0003EA33 /* guangtouq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guangtouq.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +101,8 @@
 				AF8937841BE2F4E50031B5A1 /* DetailTableViewController.m */,
 				AF8937861BE2F50C0031B5A1 /* LuLuTableViewCell.h */,
 				AF8937871BE2F50C0031B5A1 /* LuLuTableViewCell.m */,
+				AFE28B9B1BE6478A0098CB79 /* UserGuideViewController.h */,
+				AFE28B9C1BE6478A0098CB79 /* UserGuideViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 		AFE425251BE51A3F0003EA33 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AFE28B991BE6451B0098CB79 /* splash.jpg */,
 				AFE425261BE51AED0003EA33 /* guangtouq.png */,
 			);
 			name = Images;
@@ -192,6 +200,7 @@
 				AF8937771BE2718E0031B5A1 /* LaunchScreen.storyboard in Resources */,
 				AFE425271BE51AED0003EA33 /* guangtouq.png in Resources */,
 				AF8937741BE2718E0031B5A1 /* Assets.xcassets in Resources */,
+				AFE28B9A1BE6451B0098CB79 /* splash.jpg in Resources */,
 				AF8937721BE2718E0031B5A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +216,7 @@
 				AF8937851BE2F4E50031B5A1 /* DetailTableViewController.m in Sources */,
 				AF89376C1BE2718E0031B5A1 /* AppDelegate.m in Sources */,
 				AF8937821BE276770031B5A1 /* HomeTableViewController.m in Sources */,
+				AFE28B9D1BE6478A0098CB79 /* UserGuideViewController.m in Sources */,
 				AF8937691BE2718E0031B5A1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

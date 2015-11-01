@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "UserGuideViewController.h"
+#import "HomeTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,44 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]] ;
+    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"])
+    {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLaunch"];
+        NSLog(@"第一次启动");
+        //如果是第一次启动的话,使用UserGuideViewController (用户引导页面) 作为根视图
+        UserGuideViewController *userGuideViewController = [[UserGuideViewController alloc] init];
+        self.window.rootViewController = userGuideViewController;
+    }
+    else
+    {
+        NSLog(@"不是第一次启动");
+        
+        HomeTableViewController *tranVC = [[HomeTableViewController alloc] init];
+        self.window.rootViewController = tranVC;
+        
+    }
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    
+    
+    
+    UIImageView *splashScreen=[[UIImageView alloc] initWithFrame:self.window.bounds];
+    splashScreen.image = [UIImage imageNamed:@"splash.jpg"];
+    [self.window addSubview:splashScreen];
+    
+    [UIView animateWithDuration:1.0 animations:^{
+        CATransform3D transform = CATransform3DMakeScale(1.5, 1.5, 1.0);
+        splashScreen.layer.transform = transform;
+        splashScreen.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        [splashScreen removeFromSuperview];
+    }];
+    
+    
+    
     return YES;
 }
 
