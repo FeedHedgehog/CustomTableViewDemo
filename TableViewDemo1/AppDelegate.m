@@ -33,8 +33,12 @@
     {
         NSLog(@"不是第一次启动");
         
-        HomeTableViewController *tranVC = [[HomeTableViewController alloc] init];
-        self.window.rootViewController = tranVC;
+//        HomeTableViewController *tranVC = [[HomeTableViewController alloc] init];
+//        self.window.rootViewController = tranVC;
+        
+        UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController * vc = [story instantiateViewControllerWithIdentifier:@"tabBarVC"];
+        self.window.rootViewController = vc;
         
     }
     self.window.backgroundColor = [UIColor whiteColor];

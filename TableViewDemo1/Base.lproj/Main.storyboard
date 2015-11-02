@@ -7,7 +7,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="4PD-ik-gq8">
             <objects>
-                <tabBarController id="Jn1-nK-7pa" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jn1-nK-7pa" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="8oc-3M-BpM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -104,13 +104,29 @@
             </objects>
             <point key="canvasLocation" x="927" y="378"/>
         </scene>
-        <!--User Guide View Controller-->
-        <scene sceneID="rbi-P6-yCC">
+        <!--UserGuideViewController-->
+        <scene sceneID="G7p-DV-aTh">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="jin-MI-ksn" customClass="UserGuideViewController" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AVC-Cm-Gcj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="userGuideVC" title="UserGuideViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="COp-6i-6G9" customClass="UserGuideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Src-Bp-pJ5"/>
+                        <viewControllerLayoutGuide type="bottom" id="U57-dO-SSI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WM2-SO-4g8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="guangtouq.png" translatesAutoresizingMaskIntoConstraints="NO" id="pfw-Fu-RbL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iA9-Bt-QoN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1432" y="438"/>
+            <point key="canvasLocation" x="1673" y="505"/>
         </scene>
         <!--Item-->
         <scene sceneID="MbM-qd-eTE">
@@ -129,7 +145,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="muT-OX-ygT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="395" y="378"/>
+            <point key="canvasLocation" x="519" y="396"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="guangtouq.png" width="482" height="300"/>
+    </resources>
 </document>

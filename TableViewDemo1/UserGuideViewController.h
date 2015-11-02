@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UserGuideViewController : UIPageViewController
+@interface UserGuideViewController : UIViewController
 
 @end
