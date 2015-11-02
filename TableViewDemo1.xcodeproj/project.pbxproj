@@ -30,7 +30,7 @@
 		AF8937761BE2718E0031B5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF8937781BE2718E0031B5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF8937801BE276770031B5A1 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
-		AF8937811BE276770031B5A1 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		AF8937811BE276770031B5A1 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; usesTabs = 0; };
 		AF8937831BE2F4E50031B5A1 /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
 		AF8937841BE2F4E50031B5A1 /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
 		AF8937861BE2F50C0031B5A1 /* LuLuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuLuTableViewCell.h; sourceTree = "<group>"; };
@@ -39,6 +39,7 @@
 		AFE28B9B1BE6478A0098CB79 /* UserGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserGuideViewController.h; sourceTree = "<group>"; };
 		AFE28B9C1BE6478A0098CB79 /* UserGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGuideViewController.m; sourceTree = "<group>"; };
 		AFE425261BE51AED0003EA33 /* guangtouq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guangtouq.png; sourceTree = "<group>"; };
+		AFE5A7201BE7949000F12C49 /* GlobalConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConst.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 		AF8937661BE2718E0031B5A1 /* TableViewDemo1 */ = {
 			isa = PBXGroup;
 			children = (
+				AFE5A71F1BE7943F00F12C49 /* Common */,
 				AFE425231BE51A280003EA33 /* Assets */,
 				AF89377F1BE2763E0031B5A1 /* View */,
 				AF89377E1BE276230031B5A1 /* ViewController */,
@@ -138,6 +140,14 @@
 				AFE425261BE51AED0003EA33 /* guangtouq.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		AFE5A71F1BE7943F00F12C49 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AFE5A7201BE7949000F12C49 /* GlobalConst.h */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
