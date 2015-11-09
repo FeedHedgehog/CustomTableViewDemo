@@ -11,5 +11,7 @@
 
 #define OUTSIDEWEBURL "http://newplayer11.oicp.net/"
 #define INSIDEWEBURL "http://192.168.1.111:8001/"
+#define INSIDEWEBHR "http://192.168.1.111:8001/api/hrs"
+#define INSIDEWEBHUNTERS "http://192.168.1.111:8001/api/hunters"
 
 #endif /* GlobalConst_h */

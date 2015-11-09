@@ -24,7 +24,7 @@
     
     self.projects = array;
     
-    NSURL *url=[NSURL URLWithString: @INSIDEWEBURL];
+    NSURL *url=[NSURL URLWithString: @INSIDEWEBHR];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:30.0f];
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     [NSURLConnection sendAsynchronousRequest:urlRequest queue:queue completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
