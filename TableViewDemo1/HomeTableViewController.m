@@ -24,23 +24,36 @@
     
     self.projects = array;
     
-    NSURL *url=[NSURL URLWithString: @INSIDEWEBHR];
-    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:30.0f];
-    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    [NSURLConnection sendAsynchronousRequest:urlRequest queue:queue completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
-        if ([data length] > 0 && connectionError == nil) {
-            NSString *documentDir=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
-            NSString *filePath = [documentDir stringByAppendingPathComponent:@"hunters.json"];
-            [data writeToFile:filePath atomically:YES];
-            NSLog(@"成功保存！");
-        }else if ([data length] ==0 && connectionError==nil)
-        {
-            NSLog(@"没有下载到东西！");
-        }else if (connectionError!=nil)
-        {
-            NSLog(@"发生错误=%@",connectionError);
-        }
-    }];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    //Get documents directory
+    NSArray *directoryPaths = NSSearchPathForDirectoriesInDomains
+    (NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectoryPath = [directoryPaths objectAtIndex:0];
+    
+    NSString *filePath = [documentsDirectoryPath stringByAppendingPathComponent:@"hunters.json"];
+    if ([fileManager fileExistsAtPath:filePath]==YES) {
+        NSLog(@"File exists");
+    }
+    else{
+        NSURL *url=[NSURL URLWithString: @INSIDEWEBHR];
+        NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:30.0f];
+        NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+        [NSURLConnection sendAsynchronousRequest:urlRequest queue:queue completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+            if ([data length] > 0 && connectionError == nil) {
+//                NSString *documentDir=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
+//                NSString *filePath = [documentDir stringByAppendingPathComponent:@"hunters.json"];
+                [data writeToFile:filePath atomically:YES];
+                NSLog(@"成功保存！");
+            }else if ([data length] ==0 && connectionError==nil)
+            {
+                NSLog(@"没有下载到东西！");
+            }else if (connectionError!=nil)
+            {
+                NSLog(@"发生错误=%@",connectionError);
+            }
+        }];
+
+    }
 
 }
 - (void)viewDidLoad {
