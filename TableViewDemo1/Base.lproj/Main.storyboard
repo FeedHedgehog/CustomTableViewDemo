@@ -102,7 +102,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E4b-ma-dYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="927" y="378"/>
+            <point key="canvasLocation" x="907" y="488"/>
         </scene>
         <!--UserGuideViewController-->
         <scene sceneID="G7p-DV-aTh">
@@ -115,11 +115,6 @@
                     <view key="view" contentMode="scaleToFill" id="WM2-SO-4g8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="guangtouq.png" translatesAutoresizingMaskIntoConstraints="NO" id="pfw-Fu-RbL">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -148,7 +143,4 @@
             <point key="canvasLocation" x="519" y="396"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="guangtouq.png" width="482" height="300"/>
-    </resources>
 </document>

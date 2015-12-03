@@ -176,6 +176,7 @@
 		AF89375C1BE2718E0031B5A1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JC;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = cdlulu;
 				TargetAttributes = {
